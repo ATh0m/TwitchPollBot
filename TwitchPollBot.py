@@ -14,8 +14,8 @@ CONFIG = {
 
     # Informacje potrzebne do zalogowania bota na czacie
     # Bot potrzebuje moderatora do poprawnego działania
-    'username': 'ShadowDuckBot',
-    'password': 'oauth:nibflmpyef6gr4zjszkye6pb52carl', # Hasło trzeba wygenerować na stronie http://twitchapps.com/tmi/
+    'username': '',
+    'password': '', # Hasło trzeba wygenerować na stronie http://twitchapps.com/tmi/
 
     # Kanał do którego chcesz się zalogować
     'channel': '#mkrr3',
@@ -73,6 +73,7 @@ class IRCBot:
         self.poll.stop()
         self.irc.send_message(self.config['channel'], 'Głosowanie zakończone')
         self.command_result()
+        IRCBot.Helper.pp("----------------------------------------------------")
 
     def command_result(self):
         sum = self.poll.result[0]
