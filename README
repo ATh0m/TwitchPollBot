@@ -1,0 +1,39 @@
+#
+# TwicthPollBot
+#
+
+Skrypt działa w postaci bota do czatu, który analizuje wpisy i na ich podstawie wykonuje określone czynności.
+
+Lista komend (można je zmienić w zmiennej CONFIG):
+* Dla streamera/moda:
+- !start - rozpoczyna głosowanie
+- !stop - kończy głosowanie (głosowanie kończy się również automatycznie po określonym czasie)
+- !result - wypisuje wynik
+
+* Dla użytkownika:
+- !1 - głosowanie na opcję nr1
+- !2 - głosowanie na opcję nr2
+- !3 - głosowanie na opcję nr3
+
+Instrukcja:
+1. Do odpalenia skryptu potrzebny jest Python 3.
+   Link do instalatora na Windows(64 bit): https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64.msi
+2. Po zainstalowaniu Pythona powinno się dać odpalić skrypt tak samo jak normalny program np. przez podwójne kliknięcie na ikonę
+3. Zamknij program, jeżeli go otworzyłeś
+4. Teraz trzeba zmodyfikować plik TwitchPollBot.py do własnych potrzeb (w pliku umieszczone są podpowiedzi po znaku #)
+   4.1 Potrzebne jest konto na Twitchu dla bota z uprawnieniami moderatora (uprawnienia potrzebne są, żeby bot nie dostał bana, ani nic takiego za zbyt dużo wpisów)
+   4.2 Wpisz nazwę w polu 'username'
+   4.3 Wpisz wygenerowane hasło w polu 'password'. Link do generatora: http://twitchapps.com/tmi/
+   4.4 Ustaw kanał w polu 'channel' (kanał to nazwa użytkownika z przedrostkiem #)
+   4.5 Wpisz czas na głosowanie w sekundach w polu 'poll_duration'
+   4.6 'poll_notify' określa kiedy mają sie pojawić powiadomiena na czacie o wyniku w danej chwili i czasie pozostałym do końca. (! nie usuwaj 0)
+   4.7 W polu 'permission' wpisz nick użytkownika, który może wywołać te polecenie (możesz podać też kilka nicków ['test1', 'test2'])
+   4.8 Komendy możesz zmieniać na własne przez zmiane nazwy np !start -> !startpoll
+
+Informacje:
+- Wynik podawany jest w procentach i liczbie głosów
+- Wpisy bota pojawiają się na czacie i w programie
+- !Pisz do mnie w razie pytań i problemów
+
+
+
