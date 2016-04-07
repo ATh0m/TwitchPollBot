@@ -11,10 +11,10 @@ CONFIG = {
     # Informacje potrzebne do zalogowania bota na czacie
     # Bot potrzebuje moderatora do poprawnego działania
     'username': 'ShadowDuckBot',
-    'password': 'oauth:nibflmpyef6gr4zjszkye6pb52carl', # Hasło trzeba wygenerować na stronie http://twitchapps.com/tmi/
+    'password': '', # Hasło trzeba wygenerować na stronie http://twitchapps.com/tmi/
 
     # Kanał do którego chcesz się zalogować
-    'channel': '#mkrr3',
+    'channel': '',
 
     # Czas trwania głosowania w sekundach
     'poll_duration': 30,
@@ -28,17 +28,17 @@ CONFIG = {
             # Rozpocznij głosowanie
             '!start': {
                 'command': 'command_start_poll',
-                'permission': ['mkrr3']
+                'permission': ['']
             },
             # Zakończ głosowanie
             '!stop': {
                 'command': 'command_stop_poll',
-                'permission': ['mkrr3']
+                'permission': ['']
             },
             # Wypisz wynik
             '!result': {
                 'command': 'command_result',
-                'permission': ['mkrr3']
+                'permission': ['']
             },
         },
         {
